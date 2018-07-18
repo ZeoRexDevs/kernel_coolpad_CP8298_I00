@@ -273,8 +273,7 @@ static void snd_seq_midisynth_delete(struct seq_midisynth *msynth)
 }
 
 /* register new midi synth port */
-static int
-snd_seq_midisynth_register_port(struct snd_seq_device *dev)
+static int snd_seq_midisynth_register_port(struct snd_seq_device *dev)
 {
 	struct seq_midisynth_client *client;
 	struct seq_midisynth *msynth, *ms;
