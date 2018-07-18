@@ -887,7 +887,7 @@ static int Afe_Anc_Set(struct snd_kcontrol *kcontrol,
 }
 
 /* here start uplink power function */
-static const char const *Afe_Anc_function[] = {"ANCON", "ANCOFF"};
+static const char *Afe_Anc_function[] = {"ANCON", "ANCOFF"};
 
 static const struct soc_enum Afe_Anc_Enum[] = {
 	SOC_ENUM_SINGLE_EXT(ARRAY_SIZE(Afe_Anc_function), Afe_Anc_function),
