@@ -113,9 +113,10 @@ int resize_ring_buffer_for_hibernation(int enable)
 		ret = tracing_update_buffers();
 	} else {
 		tr = top_trace_array();
-		if (!tr)
+		if (!tr) {
 			return -ENODEV;
 			ret = tracing_resize_ring_buffer(tr, 0, RING_BUFFER_ALL_CPUS);
+		}
 	}
 
 	return ret;
